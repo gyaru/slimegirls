@@ -38,7 +38,7 @@
         padding: 50px;
         font-family: "Alata", sans-serif;
         position: absolute;
-        color: #FFF;
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -51,7 +51,7 @@
         padding: 50px;
         font-family: "Alata", sans-serif;
         position: absolute;
-        color: #FFF;
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,12 +93,12 @@
       }
       @keyframes spaz {
         from {
-          transform: scale(1.0);
+          transform: scale(1);
           filter: drop-shadow(0px 0px 0px rgba(22, 181, 255, 0.2));
         }
         to {
-           transform: scale(1.005);
-           filter: drop-shadow(0px 10px 20px rgba(98, 200, 247, 0.5));
+          transform: scale(1.005);
+          filter: drop-shadow(0px 10px 20px rgba(98, 200, 247, 0.5));
         }
       }
       #playwithus {
@@ -143,27 +143,27 @@
       }
       @media only screen and (max-width: 800px) {
         #header {
-        font-size: 55px;
-      }
+          font-size: 55px;
+        }
       }
       @media only screen and (max-width: 414px) {
         #header {
-        font-size: 30px;
-      }
-      #lolsponsor {
-        padding: 15px;
-        font-size: 13px;
-        align-items: flex-end;
-      }
-      #loltwitter {
-        padding: 15px;
-      }
+          font-size: 30px;
+        }
+        #lolsponsor {
+          padding: 15px;
+          font-size: 13px;
+          align-items: flex-end;
+        }
+        #loltwitter {
+          padding: 15px;
+        }
 
-      #playwithus {
-        width: 90px;
-        height: 90px;
-        margin-top: 10px;
-      }
+        #playwithus {
+          width: 90px;
+          height: 90px;
+          margin-top: 10px;
+        }
       }
       #header::before {
         content: attr(data-text);
@@ -498,20 +498,36 @@
   </head>
   <body>
     <div id="loltwitter">
-    <a href="https://twitter.com/slimegirls_gbf" title="totes serious twitter acc, follow for all the hot gbf celeb news"><img src="img/twitter.png"></a></div>
-    <div id="lolsponsor" title="I'm allowed to sponsor myself, what are you going to do? sue me?">sponsored by <a href="https://gbf.wiki"><img src="img/wiki.png" width="80px"></a></div>
+      <a
+        href="https://twitter.com/slimegirls_gbf"
+        title="totes serious twitter acc, follow for all the hot gbf celeb news"
+        ><img src="img/twitter.png"
+      /></a>
+    </div>
+    <div
+      id="lolsponsor"
+      title="I'm allowed to sponsor myself, what are you going to do? sue me?"
+    >
+      sponsored by
+      <a href="https://gbf.wiki"><img src="img/wiki.png" width="80px"/></a>
+    </div>
     <div id="container">
       <div id="box">
         <div id="slimegirl"></div>
         <div id="header" data-text="スライムガールズ">スライムガールズ</div>
         <div id="subtitle" data-text="slimegirls">slimegirls</div>
-        <div id="bragging" title="no need to be mirin, become a slimegirl today!">
+        <div
+          id="bragging"
+          title="no need to be mirin, become a slimegirl today!"
+        >
           <div id="wins" data-text="46">46</div>
           -
           <div id="lets-pretend-these-did-not-happen" data-text="1">1</div>
         </div>
 
-        <a href="https://i.imgur.com/cSekK9H.png" title="no need to be mirin, become a slimegirl today!"
+        <a
+          href="https://i.imgur.com/cSekK9H.png"
+          title="no need to be mirin, become a slimegirl today!"
           ><div id="playwithus"></div
         ></a>
       </div>
