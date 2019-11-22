@@ -33,18 +33,31 @@
         background: url("img/bg.png");
         background-size: cover;
       }
-      #lolsponsor {
-        animation: fadein 2s;
+      #loltwitter {
+        animation: fadein-sponsor 2s;
         padding: 50px;
         font-family: "Alata", sans-serif;
         position: absolute;
         color: #FFF;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        width: 300px;
+        justify-content: center;
+        left: 0;
+        bottom: 0;
+        opacity: 0.5;
+      }
+      #lolsponsor {
+        animation: fadein-sponsor 2s;
+        padding: 50px;
+        font-family: "Alata", sans-serif;
+        position: absolute;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         right: 0;
         bottom: 0;
+        opacity: 0.5;
       }
       #container {
         height: 100%;
@@ -79,14 +92,14 @@
         height: 120px;
         background: url("img/stickers1.png");
         box-sizing: border-box;
-        margin-top: 15px;
+        margin-top: 30px;
       }
       #playwithus:hover {
         width: 120px;
         height: 120px;
         background: url("img/stickers2.png");
         box-sizing: border-box;
-        margin-top: 15px;
+        margin-top: 30px;
       }
       @keyframes fadein {
         from {
@@ -94,6 +107,14 @@
         }
         to {
           opacity: 1;
+        }
+      }
+      @keyframes fadein-sponsor {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 0.5;
         }
       }
       #header {
@@ -436,7 +457,9 @@
     />
   </head>
   <body>
-    <div id="lolsponsor" title="I'm allowed to sponsor myself, what are you going to do? sue me?">Proudly sponsored by <a href="https://gbf.wiki"><img src="img/wiki.png" width="100px"></a></div>
+    <div id="loltwitter">
+    <a href="https://twitter.com/slimegirls_gbf" title="totes serious twitter acc, follow for all the hot gbf celeb news"><img src="img/twitter.png"></a></div>
+    <div id="lolsponsor" title="I'm allowed to sponsor myself, what are you going to do? sue me?">sponsored by <a href="https://gbf.wiki"><img src="img/wiki.png" width="80px"></a></div>
     <div id="container">
       <div id="box">
         <div id="slimegirl"></div>
@@ -451,7 +474,6 @@
         <a href="https://i.imgur.com/cSekK9H.png" title="no need to be mirin, become a slimegirl today!"
           ><div id="playwithus"></div
         ></a>
-        <a href="https://twitter.com/slimegirls_gbf" title="totes serious twitter acc, follow for all the hot gbf celeb news"><img src="img/twitter.png" width="25px" style="margin-top: 25px"></a>
       </div>
     </div>
   </body>
