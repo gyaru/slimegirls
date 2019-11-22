@@ -107,6 +107,7 @@
         background: url("img/stickers1.png");
         box-sizing: border-box;
         margin-top: 30px;
+        background-size: contain;
       }
       #playwithus:hover {
         width: 120px;
@@ -114,6 +115,7 @@
         background: url("img/stickers2.png");
         box-sizing: border-box;
         margin-top: 30px;
+        background-size: contain;
       }
       @keyframes fadein {
         from {
@@ -138,6 +140,30 @@
         position: relative;
         letter-spacing: 0.5em;
         animation: glitch-skew 1s infinite linear alternate-reverse;
+      }
+      @media only screen and (max-width: 800px) {
+        #header {
+        font-size: 55px;
+      }
+      }
+      @media only screen and (max-width: 414px) {
+        #header {
+        font-size: 30px;
+      }
+      #lolsponsor {
+        padding: 15px;
+        font-size: 13px;
+        align-items: flex-end;
+      }
+      #loltwitter {
+        padding: 15px;
+      }
+
+      #playwithus {
+        width: 90px;
+        height: 90px;
+        margin-top: 10px;
+      }
       }
       #header::before {
         content: attr(data-text);
