@@ -2,10 +2,24 @@
 <html>
   <head>
     <title>slimegirls</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
       html,
       body {
@@ -18,6 +32,18 @@
       body {
         background: url("img/bg.png");
         background-size: cover;
+      }
+      #lolsponsor {
+        padding: 50px;
+        font-family: "Alata", sans-serif;
+        position: absolute;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 300px;
+        right: 0;
+        bottom: 0;
       }
       #container {
         height: 100%;
@@ -121,6 +147,70 @@
         animation: glitch-anim 5s infinite linear alternate-reverse;
       }
       #subtitle::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: -2px;
+        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+      }
+      #bragging {
+        margin-top: 15px;
+        font-family: "Alata", sans-serif;
+        letter-spacing: 0.5em;
+        color: rgb(225, 255, 255, 1);
+        font-size: 11px;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+      }
+      #wins {
+        color: #04ff04;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+      }
+      #wins::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: 2px;
+        text-shadow: -2px 0 #ff00c1;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim 5s infinite linear alternate-reverse;
+      }
+      #wins::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: -2px;
+        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+      }
+      #lets-pretend-these-did-not-happen {
+        color: #f00;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+      }
+      #lets-pretend-these-did-not-happen::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: 2px;
+        text-shadow: -2px 0 #ff00c1;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim 5s infinite linear alternate-reverse;
+      }
+      #lets-pretend-these-did-not-happen::after {
         content: attr(data-text);
         position: absolute;
         top: 0;
@@ -345,12 +435,19 @@
     />
   </head>
   <body>
+    <div id="lolsponsor">Proudly sponsored by <img src="img/wiki.png" width="100px"></div>
     <div id="container">
       <div id="box">
         <div id="slimegirl"></div>
         <div id="header" data-text="スライムガールズ">スライムガールズ</div>
         <div id="subtitle" data-text="slimegirls">slimegirls</div>
-        <a href="https://i.imgur.com/cSekK9H.png"
+        <div id="bragging" title="no need to be mirin, become a slimegirl today!">
+          <div id="wins" data-text="46">46</div>
+          -
+          <div id="lets-pretend-these-did-not-happen" data-text="1">1</div>
+        </div>
+
+        <a href="https://i.imgur.com/cSekK9H.png" title="no need to be mirin, become a slimegirl today!"
           ><div id="playwithus"></div
         ></a>
       </div>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy --input=. --output=site"
+    "build": "eleventy --input=. --output=_site",
+    "watch": "eleventy --serve --port=8081"
   },
   "keywords": [],
   "author": "",
